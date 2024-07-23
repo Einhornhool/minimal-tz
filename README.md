@@ -22,4 +22,4 @@ An in-depth explanation will be found in a [blog post](https://lenas-fieldnotes.
 2. Open the Makefile and set the following paths:
     - `TOOLCHAINPATH` (path to Arm Toolchain)
     - `MERGEHEX` (path to mergehex command)
-3. Build and flash with `make all flash`
+3. Run `./build_merge_flash.sh`
