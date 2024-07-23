@@ -2,7 +2,8 @@
 
 mkdir -p build
 
-cmake -S . -B build
+cmake -S . -B build \
+    -DTOOLCHAINPATH=/usr/bin
 make -C build
 
 mergehex -m \

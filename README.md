@@ -19,7 +19,5 @@ An in-depth explanation will be found in a [blog post](https://lenas-fieldnotes.
 
 ## Usage
 1. Clone this repository with `git clone --recurse-submodules https://github.com/Einhornhool/minimal-tz.git`
-2. Open the Makefile and set the following paths:
-    - `TOOLCHAINPATH` (path to Arm Toolchain)
-    - `MERGEHEX` (path to mergehex command)
-3. Run `./build_merge_flash.sh`
+2. Open `build_merge_flash.s` and change `-DTOOLCHAINPATH` in line 6 to your Arm GNU toolchain installation
+3. Run `./build_merge_flash.sh` from the root directory

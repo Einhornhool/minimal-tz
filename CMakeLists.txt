@@ -2,7 +2,9 @@ cmake_minimum_required(VERSION 3.10)
 
 project(minimal_tz VERSION 0.1 LANGUAGES C ASM)
 
-set(TOOLCHAINPATH /home/lena/apps/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin)
+if (TOOLCHAINPATH STREQUAL "/usr/bin")
+    message(WARNING "Using default toolchain, may lead to errors.")
+endif()
 
 set(CMAKE_BUILD_TYPE    Debug)
 set(CMAKE_C_COMPILER    ${TOOLCHAINPATH}/arm-none-eabi-gcc)
